@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-09-27",
+  "corporation_tax": {
+    "trading_rate": 0.125,
+    "non_trading_rate": 0.25,
+    "source": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx"
+  },
+  "rd_credit": {
+    "rate": 0.35,
+    "first_instalment_threshold": 87500,
+    "second_instalment_share_of_balance": 0.6,
+    "applies_to": "Accounting periods with a return date on or after 23 September 2027 (in general, years ending 31 December 2026 or later). Earlier: 30% and EUR 75,000.",
+    "source": "Revenue Tax and Duty Manual Part 29-02-03 (updated April 2026), sections 1 and 2.3.1: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf"
+  },
+  "preliminary_tax": {
+    "large_company_prior_liability_over": 200000,
+    "large_first_instalment": {"month": 6, "share_of_current": 0.45, "share_of_prior": 0.50},
+    "large_second_instalment": {"month": 11, "cumulative_share_of_current": 0.90},
+    "small_single_instalment": {"month": 11, "share_of_current": 0.90, "share_of_prior": 1.00},
+    "balance_due": "With the return, on the 23rd day of the ninth month after the year-end",
+    "source": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/preliminary-ct.aspx"
+  },
+  "pillar_two": {
+    "minimum_rate": 0.15,
+    "group_revenue_threshold": 750000000,
+    "payroll_carve_out_2026": 0.094,
+    "tangible_asset_carve_out_2026": 0.074,
+    "source": "OECD GloBE Model Rules Article 9.2 (transitional substance-based income exclusion); Ireland's domestic top-up tax under Finance (No. 2) Act 2023"
+  }
+}

@@ -1,0 +1,8 @@
+duckdb
+matplotlib
+numpy
+pandas
+python-pptx
+requests
+scikit-learn
+streamlit

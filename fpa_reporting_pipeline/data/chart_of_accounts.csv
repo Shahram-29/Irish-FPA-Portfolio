@@ -1,0 +1,12 @@
+account,name,line
+4000,Subscription revenue - EUR,Revenue
+4010,Subscription revenue - GBP,Revenue
+4020,Subscription revenue - USD,Revenue
+5000,Cloud hosting,Cost of revenue
+6000,Salaries,Payroll
+6010,Employer PRSI,Payroll
+6100,Marketing programmes,Marketing programmes
+6200,Software and tools,Software and tools
+6300,Travel,Travel
+6400,Rent and facilities,Rent and facilities
+6500,Professional fees,Professional fees
