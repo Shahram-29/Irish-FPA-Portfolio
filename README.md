@@ -4,12 +4,14 @@ Four financial planning and analysis (FP&A) projects of the kind run in Irish fi
 
 **The company data is simulated**, because no real company publishes its ledger. Each project says what is made up, what is real (ECB exchange rates and Irish tax rules), and what its results do and don't show. None of the results should be read as measured business impact.
 
-| Project | What it does | Built with | Tests |
-|---|---|---|---:|
-| [Month-end FP&A pipeline](fpa_reporting_pipeline/) | GL export → data checks → EUR at ECB rates → budget vs actual → volume/price/FX bridge → headcount bridge → 12-month rolling forecast → written commentary → PowerPoint board pack | pandas, ECB API, python-pptx | 12 |
-| [SaaS metrics](saas_metrics/) | MRR bridge, cohort retention, NRR/GRR, CAC/LTV/payback, IFRS 15 deferred revenue, 36-month scenario model with cash runway | SQL (DuckDB), pandas | 9 |
-| [Irish corporation tax](irish_corporation_tax/) | Corporation tax, 35% R&D credit and its instalments, preliminary tax, Pillar Two top-up tax, three-year tax charge, cash and balance sheet | Python, Revenue guidance | 13 |
-| [Receivables and cash forecast](ar_cash_forecast/) | Ageing, DSO, late-payment risk model, survival-based cash collection forecast, backtested against actual collections | scikit-learn, pandas | 9 |
+| Project | What it does | Built with | Tests | Live app |
+|---|---|---|---:|---|
+| [Month-end FP&A pipeline](fpa_reporting_pipeline/) | GL export → data checks → EUR at ECB rates → budget vs actual → volume/price/FX bridge → headcount bridge → 12-month rolling forecast → written commentary → PowerPoint board pack | pandas, ECB API, python-pptx | 12 | [Open](https://irish-fpa-month-end-pipeline.streamlit.app/) |
+| [SaaS metrics](saas_metrics/) | MRR bridge, cohort retention, NRR/GRR, CAC/LTV/payback, IFRS 15 deferred revenue, 36-month scenario model with cash runway | SQL (DuckDB), pandas | 9 | [Open](https://irish-fpa-saas-metrics.streamlit.app/) |
+| [Irish corporation tax](irish_corporation_tax/) | Corporation tax, 35% R&D credit and its instalments, preliminary tax, Pillar Two top-up tax, three-year tax charge, cash and balance sheet | Python, Revenue guidance | 13 | [Open](https://irish-fpa-corporation-tax.streamlit.app/) |
+| [Receivables and cash forecast](ar_cash_forecast/) | Ageing, DSO, late-payment risk model, survival-based cash collection forecast, backtested against actual collections | scikit-learn, pandas | 9 | [Open](https://irish-fpa-receivables.streamlit.app/) |
+
+The apps are hosted free on Streamlit Community Cloud and go to sleep when unused, so the first visit can take up to a minute to wake one up.
 
 ## Highlights
 
@@ -52,7 +54,7 @@ Run the apps from the repository root:
 py -m streamlit run fpa_reporting_pipeline/app.py
 ```
 
-The other apps are `saas_metrics/app.py`, `irish_corporation_tax/app.py` and `ar_cash_forecast/app.py`. To host one for free, sign in to [Streamlit Community Cloud](https://streamlit.io/cloud) with GitHub, choose this repository, and give the app's path as the main file.
+The other apps are `saas_metrics/app.py`, `irish_corporation_tax/app.py` and `ar_cash_forecast/app.py`. The hosted versions run on Python 3.13 on [Streamlit Community Cloud](https://streamlit.io/cloud) and redeploy on every push to `main`.
 
 Every push runs all four projects' tests on GitHub Actions ([`.github/workflows/tests.yml`](.github/workflows/tests.yml)).
 

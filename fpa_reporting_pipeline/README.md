@@ -1,5 +1,7 @@
 # Month-end FP&A pipeline: from general ledger to board pack
 
+**Live app:** https://irish-fpa-month-end-pipeline.streamlit.app/ (it may take up to a minute to wake up)
+
 One command takes a raw general ledger (GL) export and the budget. It checks the data, converts every currency to euro, compares actuals with budget, and explains the revenue and payroll variances. It then rolls a 12-month forecast forward, writes the commentary, and builds a seven-slide PowerPoint board pack. A Streamlit app shows the same results interactively.
 
 **The data is simulated.** Example Software EMEA Ltd is a fictional Dublin-based EMEA headquarters billing customers in euro, sterling and dollars. [`generate_data.py`](generate_data.py) creates its budget and eight months of GL postings, with some deliberate stories and two deliberate data errors for the pipeline to find. Only the exchange rates are real: ECB monthly averages.

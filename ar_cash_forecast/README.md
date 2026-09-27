@@ -1,5 +1,7 @@
 # Receivables: ageing, late-payment risk and a cash collection forecast
 
+**Live app:** https://irish-fpa-receivables.streamlit.app/ (it may take up to a minute to wake up)
+
 For a company's receivables at month-end, this project:
 - ages the open invoices and tracks days sales outstanding (DSO),
 - scores each open invoice for the chance of being paid more than 30 days late,

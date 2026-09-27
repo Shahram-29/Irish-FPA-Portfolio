@@ -1,5 +1,7 @@
 # SaaS metrics: recurring revenue, retention, unit economics and IFRS 15
 
+**Live app:** https://irish-fpa-saas-metrics.streamlit.app/ (it may take up to a minute to wake up)
+
 Calculates the metrics a software company's FP&A team reports every month:
 - monthly recurring revenue (MRR) and annual recurring revenue (ARR),
 - the MRR bridge,

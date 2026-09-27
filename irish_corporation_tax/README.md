@@ -1,5 +1,7 @@
 # Irish corporation tax: the R&D credit and Pillar Two
 
+**Live app:** https://irish-fpa-corporation-tax.streamlit.app/ (it may take up to a minute to wake up)
+
 A tax planning model for an Irish company in a large multinational group. For the 2026 year it works out:
 - corporation tax,
 - the R&D tax credit and how it is paid in instalments,
